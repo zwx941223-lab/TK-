@@ -1,0 +1,17 @@
+# Local campaign media supplied or generated for this workspace.
+assets/*.webp
+assets/*.png
+assets/*.jpg
+assets/*.jpeg
+assets/*.mp4
+
+# OS and local development artifacts.
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+node_modules/
+tmp/
+*-check.png
+*-playwright.png
+*.log
