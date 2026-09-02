@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Conecta con una red de suministro de artículos para el hogar en México." />
     <meta name="theme-color" content="#123c42" />
-    <meta name="version" content="0.0.2" />
+    <meta name="version" content="0.0.6" />
     <title>Abasto Directo | Red de suministro para el hogar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -66,15 +66,15 @@
       <section class="categories" id="categorias" aria-labelledby="categories-title">
         <div class="shell">
           <div class="section-topline">
-            <div class="section-label light"><span>02</span> Lo que movemos</div>
-            <p>Una selección pensada para el día a día.</p>
+            <div class="section-label light"><span>02</span> Lo que ofrecemos</div>
+            <p>Productos prácticos para hacer crecer tu tienda de TikTok.</p>
           </div>
-          <h2 id="categories-title">Artículos que resuelven<br />la vida en casa.</h2>
+          <h2 id="categories-title">Productos pensados<br />para vender mejor.</h2>
           <div class="category-grid">
-            <article><span class="category-number">01</span><h3>Organización</h3><p>Contenedores, cestas y soluciones para ordenar.</p></article>
-            <article><span class="category-number">02</span><h3>Cocina</h3><p>Prácticos para preparar, guardar y servir.</p></article>
-            <article><span class="category-number">03</span><h3>Limpieza</h3><p>Esenciales funcionales para cada espacio.</p></article>
-            <article><span class="category-number">04</span><h3>Textiles</h3><p>Piezas básicas que acompañan la rutina.</p></article>
+            <article><span class="category-number">01</span><h3>Organización</h3><p>Cajas, cestas y soluciones prácticas para mantener cada espacio en orden.</p></article>
+            <article><span class="category-number">02</span><h3>Artículos de cocina</h3><p>Productos útiles para preparar, guardar y disfrutar las comidas del día a día.</p></article>
+            <article><span class="category-number">03</span><h3>Juguetes</h3><p>Opciones divertidas y funcionales para acompañar el juego en familia.</p></article>
+            <article><span class="category-number">04</span><h3>Textiles</h3><p>Toallas, telas y artículos textiles cómodos para la vida cotidiana.</p></article>
           </div>
         </div>
       </section>
@@ -85,7 +85,7 @@
           <h2 id="process-title">Un inicio claro para trabajar mejor.</h2>
         </div>
         <ol class="steps">
-          <li><span>01</span><div><h3>Cuéntanos quién eres</h3><p>Comparte tu ciudad, experiencia e interés de colaboración.</p></div></li>
+          <li><span>01</span><div><h3>Cuéntanos quién eres</h3><p>Déjanos tu nombre y cuéntanos si te interesa crear una tienda nueva.</p></div></li>
           <li><span>02</span><div><h3>Revisamos el encaje</h3><p>Valoramos si existe una oportunidad real para ambas partes.</p></div></li>
           <li><span>03</span><div><h3>Definimos el siguiente paso</h3><p>Si hay afinidad, acordamos una conversación directa.</p></div></li>
         </ol>
@@ -97,19 +97,11 @@
             <div class="section-label light"><span>04</span> Solicitud</div>
             <h2 id="application-title">Hablemos de una colaboración responsable.</h2>
             <p>Completa estos datos y prepara un resumen claro para compartir con nuestro equipo.</p>
-            <div class="application-note"><span aria-hidden="true">*</span> El envío directo se conecta cuando se defina tu canal de WhatsApp o CRM.</div>
           </div>
           <div class="form-panel">
             <form data-application-form novalidate>
-              <div class="field-row">
-                <label>Nombre completo<input name="name" autocomplete="name" required placeholder="Tu nombre" /></label>
-                <label>Ciudad<input name="city" autocomplete="address-level2" required placeholder="Ej. Guadalajara" /></label>
-              </div>
-              <div class="field-row">
-                <label>WhatsApp<input name="phone" inputmode="tel" autocomplete="tel" required placeholder="55 0000 0000" /></label>
-                <label>Tipo de colaboración<select name="interest" required><option value="" selected disabled>Selecciona una opción</option><option>Distribución</option><option>Compra al mayoreo</option><option>Representación comercial</option><option>Otra colaboración</option></select></label>
-              </div>
-              <label>Cuéntanos brevemente<textarea name="details" rows="4" required placeholder="Experiencia, zona de trabajo o lo que buscas."></textarea></label>
+              <label>Nombre completo<input name="name" autocomplete="name" required placeholder="Tu nombre" /></label>
+              <label>¿Estás dispuesto/a a colaborar con nosotros para crear una nueva tienda de TikTok en México?<select name="store_creation" required><option value="" selected disabled>Selecciona una opción</option><option value="Sí">Sí</option><option value="No">No</option></select></label>
               <p class="form-error" data-form-error role="alert" hidden>Completa los campos marcados para preparar tu solicitud.</p>
               <button class="button button-accent" type="submit">Preparar solicitud <span aria-hidden="true">&#8594;</span></button>
             </form>
@@ -130,7 +122,7 @@
     <footer class="site-footer shell">
       <a class="brand brand-footer" href="#inicio" aria-label="Volver al inicio"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>ABASTO<br />DIRECTO</span></a>
       <p>Una conversación a tiempo puede ser el inicio de una buena red.</p>
-      <small>v0.0.2 · México</small>
+      <small>v0.0.6 · México</small>
     </footer>
     <script src="app.js"></script>
   </body>

@@ -1,6 +1,6 @@
 # Abasto Directo
 
-Version: `0.0.2`
+Version: `0.0.6`
 
 Spanish-first static landing page for recruiting supply-chain collaborators in Mexico. It is designed around a real campaign narrative: household-goods supply, responsible local collaborators, and a clear path to initiate contact.
 

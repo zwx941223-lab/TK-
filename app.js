@@ -19,9 +19,10 @@ const ready = document.querySelector('[data-request-ready]');
 const requestText = document.querySelector('[data-request-text]');
 const copyButton = document.querySelector('[data-copy-request]');
 const shareButton = document.querySelector('[data-share-request]');
+const telegramUsername = 'b23355';
 
 function buildRequest(data) {
-  return `Hola, me interesa colaborar con Abasto Directo.\n\nNombre: ${data.name}\nCiudad: ${data.city}\nWhatsApp: ${data.phone}\nInterés: ${data.interest}\n\nInformación adicional:\n${data.details}`;
+  return `Hola, me interesa colaborar con Abasto Directo.\n\nNombre: ${data.name}\n¿Dispuesto/a a crear una nueva tienda de TikTok en México?: ${data.store_creation}`;
 }
 
 form?.addEventListener('submit', (event) => {
@@ -34,9 +35,11 @@ form?.addEventListener('submit', (event) => {
   if (!valid) return;
 
   const data = Object.fromEntries(new FormData(form).entries());
-  requestText.value = buildRequest(data);
+  const message = buildRequest(data);
+  requestText.value = message;
   ready.hidden = false;
   ready.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  window.location.href = `https://t.me/${telegramUsername}?text=${encodeURIComponent(message)}`;
 });
 
 copyButton?.addEventListener('click', async () => {
