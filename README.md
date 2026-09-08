@@ -1,21 +1,25 @@
-# NEXO SHOP MX
+# mxtkshop.bbroot.com
 
-Version: `0.2.0`
+Version: `0.2.7`
 
-Spanish-first static landing page for TikTok Shop support traffic in Mexico. Copy follows the second page's service, verification, review, and Telegram messaging.
+Página de campaña en español para México. El contenido principal copia el texto visible del video de referencia:
 
-## Run locally
+- En Mexico
+- Tienes un RFC?
+- Recibir beneficios
+- Beneficios sociales disponibles
+- Por favor recoja sus 3000 pesos lo antes posible.
+
+## Ejecutar localmente
 
 ```powershell
-py -m http.server 4173 --bind 127.0.0.1
+python -m http.server 4173 --bind 127.0.0.1
 ```
 
-Open `http://127.0.0.1:4173`.
+Abrir `http://127.0.0.1:4173`.
 
-## Lead handoff
+## Contacto
 
-The form prepares a Telegram message using the configured public username.
+La página conserva la imagen principal y un único botón centrado de Telegram que usa `tg://resolve?domain=b23355`.
 
-## Media
-
-`assets/mexico-bg.png` is the model-generated Mexican background. The campaign video remains local-only and is not intended for server deployment.
+La imagen principal `assets/beneficios-rfc-poster-v3.png` es la imagen mexicana proporcionada para esta versión.
