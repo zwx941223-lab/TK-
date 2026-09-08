@@ -1,6 +1,6 @@
 # mxtkshop.bbroot.com
 
-Version: `0.2.7`
+Version: `0.2.8`
 
 Página de campaña en español para México. El contenido principal copia el texto visible del video de referencia:
 
@@ -20,6 +20,6 @@ Abrir `http://127.0.0.1:4173`.
 
 ## Contacto
 
-La página conserva la imagen principal y un único botón centrado de Telegram que usa `tg://resolve?domain=b23355`.
+La página conserva la imagen principal y un único botón centrado de Telegram que usa `https://t.me/b23355`.
 
 La imagen principal `assets/beneficios-rfc-poster-v3.png` es la imagen mexicana proporcionada para esta versión.
