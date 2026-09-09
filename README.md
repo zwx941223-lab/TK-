@@ -1,6 +1,6 @@
 # mxtkshop.bbroot.com
 
-Version: `0.3.2`
+Version: `0.3.1`
 
 Página de campaña en español para México. El contenido principal copia el texto visible del video de referencia:
 
