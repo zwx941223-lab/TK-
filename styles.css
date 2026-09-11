@@ -18,9 +18,7 @@
 html{scroll-behavior:smooth}
 body{
   margin:0;
-  background:
-    radial-gradient(circle at 12% 14%, rgba(193,155,104,.12), transparent 24%),
-    linear-gradient(180deg, #08171b 0%, #0d1e22 22%, var(--paper) 22%, var(--paper) 100%);
+  background:#fff;
   color:var(--ink);
   font-family:var(--sans);
   line-height:1.5;
@@ -237,6 +235,7 @@ h1,h2{
 
 .button-only{
   align-items:center;
+  background:transparent;
   display:flex;
   justify-content:center;
   min-height:100svh;
@@ -245,6 +244,12 @@ h1,h2{
 
 .button-only .button{
   min-width:230px;
+  animation:breathe 2.8s ease-in-out infinite;
+}
+
+@keyframes breathe{
+  0%,100%{transform:translateY(0) scale(1)}
+  50%{transform:translateY(-5px) scale(1.015)}
 }
 
 .poster-only{
@@ -526,5 +531,8 @@ textarea:focus{
     animation-iteration-count:1!important;
     transition-duration:.01ms!important;
     scroll-behavior:auto!important;
+  }
+  .button-only .button{
+    animation:none;
   }
 }
