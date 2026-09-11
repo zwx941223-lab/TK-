@@ -1,6 +1,6 @@
-# mxtkshop.bbroot.com
+# mxtiktok.mxkbw.top
 
-Version: `0.3.7`
+Version: `0.2.2`
 
 Página de campaña en español para México. El contenido principal copia el texto visible del video de referencia:
 
@@ -20,6 +20,6 @@ Abrir `http://127.0.0.1:4173`.
 
 ## Contacto
 
-La página solo conserva un botón centrado de Telegram que usa `https://t.me/b23355`.
+La página muestra el póster de campaña y un botón de Telegram que usa `https://t.me/zipper_55`.
 
-La imagen `assets/beneficios-rfc-poster-v3.png` se conserva como recurso del proyecto, pero no se muestra en esta versión.
+La imagen principal se sirve desde `assets/mexico-beneficios.png`.
